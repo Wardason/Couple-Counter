@@ -24,5 +24,15 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/
+    - assets/images/
+
+  fonts:
+    - family: Licorice
+      fonts:
+        - asset: assets/fonts/Licorice-Regular.ttf
+    - family: LuxuriousRoman
+      fonts:
+        - asset: assets/fonts/LuxuriousRoman-Regular.ttf
+
+
 
