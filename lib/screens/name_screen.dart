@@ -1,6 +1,8 @@
+import 'package:couple_counter/screens/all_imports.dart';
 import 'package:flutter/material.dart';
 import 'package:couple_counter/constants.dart';
 import 'package:couple_counter/components/myTextfield.dart';
+import 'package:couple_counter/components/buildIllustration.dart';
 
 class NameScreen extends StatefulWidget {
   static const String id = 'name_screen';
@@ -9,26 +11,7 @@ class NameScreen extends StatefulWidget {
   _NameScreenState createState() => _NameScreenState();
 }
 
-Widget buildIllustration() {
-  return Column(
-    children: <Widget>[
-      Image(
-        image: AssetImage('assets/images/illustration1.png'),
-      ),
-      Text(
-        'Whats the name of you and your partner?',
-        style: TextStyle(
-          fontSize: 17,
-          fontWeight: FontWeight.bold,
-          fontFamily: fontFamily,
-          letterSpacing: 0.6,
-        ),
-      ),
-    ],
-  );
-}
-
-createAlertDialog(BuildContext context) {
+buildAlertDialog(BuildContext context) {
   TextEditingController customName1Controller = TextEditingController();
   TextEditingController customName2Controller = TextEditingController();
 
@@ -79,6 +62,7 @@ createAlertDialog(BuildContext context) {
                 String name1 = customName1Controller.text.toString();
                 String name2 = customName2Controller.text.toString();
                 print('$name1 + $name2');
+                Navigator.pushNamed(context, DateScreen.id);
               })
         ],
         shape: RoundedRectangleBorder(
@@ -104,13 +88,15 @@ class _NameScreenState extends State<NameScreen> {
               children: <Widget>[
                 Text(
                   'Your relationship',
-                  style: TextStyle(
-                    fontSize: 35,
-                    fontWeight: FontWeight.w500,
-                    fontFamily: fontFamily,
-                  ),
+                  style: headingTextStyle,
                 ),
-                buildIllustration(),
+                BuildIllustration(
+                  illustration: AssetImage(
+                    'assets/images/illustration1.png',
+                  ),
+                  illustrationDescription:
+                      'Whats the name of you and your partner?',
+                ),
                 SizedBox(
                   height: 50,
                 ),
@@ -129,7 +115,7 @@ class _NameScreenState extends State<NameScreen> {
                     ),
                   ),
                   onPressed: () {
-                    createAlertDialog(context);
+                    buildAlertDialog(context);
                   },
                   child: Padding(
                     padding: const EdgeInsets.all(10.0),
