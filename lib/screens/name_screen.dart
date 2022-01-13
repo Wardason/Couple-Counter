@@ -101,19 +101,7 @@ class _NameScreenState extends State<NameScreen> {
                   height: 50,
                 ),
                 ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    primary: Colors.black,
-                    shadowColor: Colors.black,
-                    fixedSize: Size(270, 50),
-                    elevation: 8.0,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    textStyle: TextStyle(
-                      fontSize: 25,
-                      letterSpacing: 0.5,
-                    ),
-                  ),
+                  style: elevatedButtonStyle,
                   onPressed: () {
                     buildAlertDialog(context);
                   },

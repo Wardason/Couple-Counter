@@ -1,4 +1,5 @@
 import 'package:couple_counter/constants.dart';
+import 'package:couple_counter/screens/all_imports.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:couple_counter/components/buildIllustration.dart';
@@ -42,21 +43,10 @@ class _DateScreenState extends State<DateScreen> {
               ),
             ),
             ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                primary: Colors.black,
-                shadowColor: Colors.black,
-                fixedSize: Size(270, 50),
-                elevation: 8.0,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                textStyle: TextStyle(
-                  fontSize: 25,
-                  letterSpacing: 0.5,
-                ),
-              ),
+              style: elevatedButtonStyle,
               onPressed: () {
                 print(selectedDate);
+                Navigator.pushNamed(context, LocationScreen.id);
               },
               child: Padding(
                 padding: const EdgeInsets.all(10.0),

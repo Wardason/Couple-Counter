@@ -13,6 +13,7 @@ class CoupleCounter extends StatelessWidget {
       routes: {
         NameScreen.id: (context) => NameScreen(),
         DateScreen.id: (context) => DateScreen(),
+        LocationScreen.id: (context) => LocationScreen(),
         OverviewScreen.id: (context) => OverviewScreen(),
       },
     );
