@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:couple_counter/constants.dart';
 import 'package:couple_counter/components/buildIllustration.dart';
 
+//const String api_key = 'AIzaSyDqIwqCds8RCOASwuPdE-wJXGNgzdB0sZ4';
+
 class LocationScreen extends StatefulWidget {
   static const String id = 'location_screen';
 
