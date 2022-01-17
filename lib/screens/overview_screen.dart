@@ -1,3 +1,6 @@
+import 'package:couple_counter/components/heartAnimation.dart';
+import 'package:couple_counter/constants.dart';
+import 'package:couple_counter/components/durationTimer.dart';
 import 'package:flutter/material.dart';
 
 class OverviewScreen extends StatefulWidget {
@@ -10,6 +13,21 @@ class OverviewScreen extends StatefulWidget {
 class _OverviewScreenState extends State<OverviewScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            Text(
+              'Colson + Megan',
+              style: headingTextStyle,
+            ),
+            HeartAnimation(),
+            Text('Together since 10.10.2021 or'),
+            DurationTimer(),
+          ],
+        ),
+      ),
+    );
   }
 }

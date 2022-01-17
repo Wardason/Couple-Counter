@@ -9,6 +9,7 @@ class CoupleCounter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       initialRoute: NameScreen.id,
       routes: {
         NameScreen.id: (context) => NameScreen(),
