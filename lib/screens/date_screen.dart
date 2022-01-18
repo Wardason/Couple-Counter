@@ -3,6 +3,7 @@ import 'package:couple_counter/screens/all_imports.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:couple_counter/components/buildIllustration.dart';
+import 'package:intl/intl.dart';
 
 class DateScreen extends StatefulWidget {
   static const String id = 'date_screen';
@@ -13,6 +14,7 @@ class DateScreen extends StatefulWidget {
 
 class _DateScreenState extends State<DateScreen> {
   late DateTime selectedDate;
+  final DateFormat formatter = DateFormat('yyyy-MM-dd');
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +47,9 @@ class _DateScreenState extends State<DateScreen> {
             ElevatedButton(
               style: elevatedButtonStyle,
               onPressed: () {
-                print(selectedDate);
+                final DateTime date = selectedDate;
+                final String formattedDate = formatter.format(date);
+                print(formattedDate);
                 Navigator.pushNamed(context, LocationScreen.id);
               },
               child: Padding(
