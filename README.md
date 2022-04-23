@@ -1,17 +1,12 @@
-# couple_counter
+# Couple Counter
+An app that tracks the days how long you’re in a realitionship with your partner.
 
-An app that tracks the days how long you’re with your loved one
+## Userinterface
+![1](https://github.com/Wardason/Couple-Counter/blob/main/userinterface/ui-1.PNG)
+![2](https://github.com/Wardason/Couple-Counter/blob/main/userinterface/ui-2.PNG)
+![3](https://github.com/Wardason/Couple-Counter/blob/main/userinterface/ui-3.PNG)
+![4](https://github.com/Wardason/Couple-Counter/blob/main/userinterface/ui-4.PNG)
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# Couple-Counter
+## Outro
+⚠️This app isn't finished⚠️, but if you have any question about the app or the made of the app feel free to ask.
